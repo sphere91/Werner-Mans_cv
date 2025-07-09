@@ -6,7 +6,7 @@ export function ExperienceSection() {
             <h2 className="text-2xl font-semibold">Experience</h2>
 
             {/* Senior Developer - Current Job */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Senior Developer</h3>
                     <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Oct 2019 - Present)</p>
@@ -27,7 +27,7 @@ export function ExperienceSection() {
             </Card>
 
             {/* Application Developer */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Application Developer</h3>
                     <p className="text-gray-500">FNB Life, Johannesburg (Aug 2018 - Oct 2019)</p>
@@ -46,7 +46,7 @@ export function ExperienceSection() {
             </Card>
 
             {/* Systems Manager */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Systems Manager</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Mar 2018 - Jul 2018)</p>
@@ -68,7 +68,7 @@ export function ExperienceSection() {
             </Card>
 
             {/* Senior Developer */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Senior Developer</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Jan 2017 - Mar 2018)</p>
@@ -96,7 +96,7 @@ export function ExperienceSection() {
             </Card>
 
             {/* Programmer */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Programmer</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Aug 2014 - Jan 2017)</p>
@@ -114,7 +114,7 @@ export function ExperienceSection() {
             </Card>
 
             {/* Programmer - AEC Electronics */}
-            <Card>
+            <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Programmer</h3>
                     <p className="text-gray-500">AEC Electronics, Kempton Park (Jun 2014 - Aug 2014)</p>

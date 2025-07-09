@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function MembershipSection() {
     return (
-        <Card className="mt-6">
+        <Card className="card-glass mt-6">
             <CardContent>
                 <h2 className="text-2xl font-semibold mb-2">Memberships</h2>
                 <p>
