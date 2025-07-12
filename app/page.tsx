@@ -14,7 +14,10 @@ import { CoursesSection } from '@/components/CoursesSection'
 import Image from "next/image"
 
 //TODO: Update ExperienceSection with latest job details
+//TODO: Gather Tech lead information for the CV
+//TODO: get Info on LeadershipEx Programme
 //TODO: Check hoverCard functionality on mobile
+//TODO: Move navbar on desktop to middle again
 
 export default function Home() {
   return (
