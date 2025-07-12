@@ -10,12 +10,12 @@ export function ContactCard() {
             <CardContent>
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                     {/* ✅ Avatar Left */}
-                    <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white flex-shrink-0">
+                    <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-700 flex-shrink-0">
                         <Image
-                            src="/profile_pic.jpg"
+                            src="/profile_pic.png"
                             alt="Werner Mans Avatar"
-                            width={128}
-                            height={128}
+                            width={1181}
+                            height={1181}
                             className="object-cover"
                         />
                     </div>
@@ -24,7 +24,7 @@ export function ContactCard() {
                     <div className="flex-1 space-y-4 text-center md:text-left">
                         <div>
                             <h1 className="text-4xl font-bold">Werner Mans</h1>
-                            <p className="text-lg text-gray-200">Senior RPG Developer</p>
+                            <p className="text-lg text-gray-200">Development Technical Lead</p>
                         </div>
 
                         {/* ✅ Contact Info + Socials in One Row */}

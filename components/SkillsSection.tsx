@@ -6,28 +6,61 @@ import { motion } from "framer-motion"
 
 export function SkillsSection() {
     const skills = [
-        { name: "RPGLE (IBMi 7.3)", description: "High-performance programming language used on IBM i systems for business applications.", level: 95 },
-        { name: "CLLE", description: "Control Language for IBM i systems, used for scripting and batch jobs.", level: 85 },
-        { name: "Node.js", description: "JavaScript runtime for building scalable, fast back-end and full-stack applications.", level: 75 },
-        { name: "SQL", description: "Language for managing and querying relational databases.", level: 65 },
-        { name: "Python", description: "Versatile programming language for automation, data analysis, and web development.", level: 95 },
-        { name: "Java (Android)", description: "Object-oriented programming language used for Android mobile apps.", level: 85 },
-        { name: "C++", description: "High-performance, low-level programming language for systems and performance-critical apps.", level: 75 },
+        {
+            name: "RPG IV (ILE RPG)",
+            description: "Modern programming language for IBM i systems, used for business applications and system integration.",
+            level: 95
+        },
+        {
+            name: "CL (Control Language)",
+            description: "Scripting language for IBM i systems, used for automation, batch processing, and system control.",
+            level: 85
+        },
+        {
+            name: "Node.js",
+            description: "JavaScript runtime for building scalable, fast back-end and full-stack applications.",
+            level: 75
+        },
+        {
+            name: "SQL",
+            description: "Language for managing and querying relational databases.",
+            level: 65
+        },
+        {
+            name: "Python",
+            description: "Versatile programming language for automation, data analysis, and web development.",
+            level: 95
+        },
+        {
+            name: "C++",
+            description: "High-performance, low-level programming language for systems and performance-critical apps.",
+            level: 75
+        },
+        {
+            name: "Next.js",
+            description: "React-based framework for server-side rendering, static site generation, and scalable web applications.",
+            level: 75
+        },
+        {
+            name: "Angular",
+            description: "TypeScript-based framework for building dynamic, single-page web applications.",
+            level: 70
+        }
     ]
 
     return (
         <div className="mt-6">
-            <h2 className="text-2xl font-semibold mb-2">Skills</h2>
+            <h2 className="text-xl font-semibold mb-2">Skills</h2>
             <div className="flex flex-wrap gap-4">
                 {skills.map((skill) => (
                     <HoverCard key={skill.name} openDelay={100} closeDelay={50}>
                         <HoverCardTrigger asChild>
                             <motion.div
-                                whileHover={{ scale: 1.05 }}
+                                whileHover={{ scale: 1.15 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="cursor-pointer"
                             >
-                                <Badge className="badge-primary">
+                                <Badge className="badge-primary text-base py-1.5 px-3">
                                     {skill.name}
                                 </Badge>
                             </motion.div>

@@ -8,7 +8,7 @@ export function ProfileSection() {
             <CardContent>
                 <h2 className="text-2xl font-semibold mb-2">Profile</h2>
                 <p className="text-base leading-relaxed">
-                    Experienced and results-driven software developer with over 7 years of expertise in RPGLE (IBM i) back-end development,
+                    Experienced and results-driven software developer with over 11 years of expertise in RPGLE (IBM i) back-end development,
                     complemented by a strong foundation in modern technologies including Node.js, SQL, and Python.
                     Passionate about clean, maintainable code and performance optimization, with a proven track record in delivering scalable,
                     business-critical solutions for the insurance and finance industries.

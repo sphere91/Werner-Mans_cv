@@ -5,11 +5,32 @@ export function ExperienceSection() {
         <div className="mt-6 space-y-6">
             <h2 className="text-2xl font-semibold">Experience</h2>
 
+            {/* Development Technical Lead - Current Job */}
+            <Card className="card-glass">
+                <CardContent className="p-4">
+                    <h3 className="text-xl font-bold">Development Technical Lead</h3>
+                    <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Jun 2023 - Present)</p>
+                    <p className="mt-2">
+                        With the goal of expanding my skills through the exploration of new technologies and languages,
+                        I joined the 1Life project’s team. Though the main focus is still on back-end RPG development,
+                        the objective is to shift to a balanced role as a full stack developer.
+                    </p>
+                    <ul className="list-disc ml-4 mt-2 text-sm">
+                        <li>Support across all products and back-end areas under the 1Life Insurance Pillar</li>
+                        <li>Enhancement and Business as usual projects for the long-term insurance system</li>
+                        <li>Resolution of any Business impacting incidents</li>
+                        <li>General system improvements and enhancements</li>
+                        <li>Deployment of code changes to production systems</li>
+                        <li>Provide guidance to junior developers</li>
+                    </ul>
+                </CardContent>
+            </Card>
+
             {/* Senior Developer - Current Job */}
             <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Senior Developer</h3>
-                    <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Oct 2019 - Present)</p>
+                    <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Oct 2019 - May 2023)</p>
                     <p className="mt-2">
                         With the goal of expanding my skills through the exploration of new technologies and languages,
                         I joined the 1Life project’s team. Though the main focus is still on back-end RPG development,
