@@ -7,16 +7,16 @@ export function ProfileSection() {
         <Card className="card-glass p-4 mt-6">
             <CardContent>
                 <h2 className="text-2xl font-semibold mb-2">Profile</h2>
-                <p className="text-base leading-relaxed">
-                    Experienced and results-driven software developer with over 11 years of expertise in RPGLE (IBM i) back-end development,
-                    complemented by a strong foundation in modern technologies including Node.js, SQL, and Python.
-                    Passionate about clean, maintainable code and performance optimization, with a proven track record in delivering scalable,
-                    business-critical solutions for the insurance and finance industries.
+                <p className="text-base leading-relaxed text-justify">
+                    Accomplished and results-oriented Technical Lead with over 11 years of experience in back-end development,
+                    specializing in RPGLE on the IBM i platform. Adept at designing and implementing scalable, business-critical
+                    systems within the insurance and finance sectors. Brings a strong command of full-stack development using modern
+                    technologies including Node.js, SQL, Python, Angular, and Next.js.
                 </p>
-                <p className="mt-4 text-base leading-relaxed">
-                    Recognized for analytical thinking, logical problem-solving, and innovative approaches to software challenges.
-                    Adept at collaborating with cross-functional teams, mentoring junior developers, and continuously expanding technical skills.
-                    Currently focused on evolving from a back-end specialist to a versatile full-stack developer.
+                <p className="mt-4 text-base leading-relaxed text-justify">
+                    Highly regarded for analytical thinking, innovative problem-solving, and a commitment to code quality and maintainability.
+                    Proven ability to lead cross-functional teams, mentor developers, and align technical solutions with strategic business goals.
+                    Passionate about continuous learning and leveraging technology to enhance performance, user experience, and operational efficiency.
                 </p>
             </CardContent>
         </Card>

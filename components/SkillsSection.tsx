@@ -12,9 +12,14 @@ export function SkillsSection() {
             level: 90
         },
         {
-            name: "CL (Control Language)",
+            name: "CL (IBMi)",
             description: "Scripting language for IBM i systems, used for automation, batch processing, and system control.",
             level: 75
+        },
+        {
+            name: "SQL",
+            description: "Language for managing and querying relational databases.",
+            level: 90
         },
         {
             name: "Node.js",
@@ -22,9 +27,14 @@ export function SkillsSection() {
             level: 80
         },
         {
-            name: "SQL",
-            description: "Language for managing and querying relational databases.",
-            level: 90
+            name: "Next.js",
+            description: "React-based framework for server-side rendering, static site generation, and scalable web applications.",
+            level: 75
+        },
+        {
+            name: "Angular",
+            description: "TypeScript-based framework for building dynamic, single-page web applications.",
+            level: 65
         },
         {
             name: "Python",
@@ -36,16 +46,6 @@ export function SkillsSection() {
             description: "High-performance, low-level programming language for systems and performance-critical apps.",
             level: 70
         },
-        {
-            name: "Next.js",
-            description: "React-based framework for server-side rendering, static site generation, and scalable web applications.",
-            level: 75
-        },
-        {
-            name: "Angular",
-            description: "TypeScript-based framework for building dynamic, single-page web applications.",
-            level: 65
-        }
     ]
 
     return (

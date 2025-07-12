@@ -12,7 +12,7 @@ export function ExperienceSection() {
                     <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Jun 2023 - Present)</p>
                     <p className="mt-2">
                         With the goal of expanding my skills through the exploration of new technologies and languages,
-                        I joined the 1Life project’s team. Though the main focus is still on back-end RPG development,
+                        I joined the 1Life project&apos;s team. Though the main focus is still on back-end RPG development,
                         the objective is to shift to a balanced role as a full stack developer.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
@@ -26,23 +26,23 @@ export function ExperienceSection() {
                 </CardContent>
             </Card>
 
-            {/* Senior Developer - Current Job */}
+            {/* Senior Developer */}
             <Card className="card-glass">
                 <CardContent className="p-4">
                     <h3 className="text-xl font-bold">Senior Developer</h3>
                     <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Oct 2019 - May 2023)</p>
                     <p className="mt-2">
-                        With the goal of expanding my skills through the exploration of new technologies and languages,
-                        I joined the 1Life project’s team. Though the main focus is still on back-end RPG development,
-                        the objective is to shift to a balanced role as a full stack developer.
+                        Joined the 1Life Insurance division to expand into full-stack development,
+                        while continuing to lead RPGLE back-end initiatives.
+                        Worked across key product lines,
+                        providing technical leadership and delivery for business-critical enhancements.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Support across all products and back-end areas under the 1Life Insurance Pillar</li>
-                        <li>Enhancement and Business as usual projects for the long-term insurance system</li>
-                        <li>Resolution of any Business impacting incidents</li>
-                        <li>General system improvements and enhancements</li>
-                        <li>Deployment of code changes to production systems</li>
-                        <li>Provide guidance to junior developers</li>
+                        <li>Provided back-end support for all products within the 1Life Insurance pillar.</li>
+                        <li>Delivered business-as-usual and enhancement projects on the long-term insurance system.</li>
+                        <li>Resolved production incidents and optimized system reliability.</li>
+                        <li>Led system improvements, deployments, and release coordination.</li>
+                        <li>Mentored developers and conducted technical reviews.</li>
                     </ul>
                 </CardContent>
             </Card>
@@ -53,15 +53,14 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Application Developer</h3>
                     <p className="text-gray-500">FNB Life, Johannesburg (Aug 2018 - Oct 2019)</p>
                     <p className="mt-2">
-                        I moved to FNB Life as an Application Developer for the opportunity to hone my development skills and to learn the processes of the Bank.
-                        I was the main RPG developer for the short-term team and assisted across all other products under the Insurance Pillar.
+                        Served as the primary RPG developer for the short-term insurance team,
+                        contributing to development and support across the full insurance product suite.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Support across all products under the FNB Life Insurance Pillar</li>
-                        <li>Enhancement projects for the short-term insurance system</li>
-                        <li>Deployment of code changes to production systems</li>
-                        <li>Provide guidance to junior developers</li>
-                        <li>Code review</li>
+                        <li>Delivered enhancements and support for short-term insurance systems.</li>
+                        <li>Collaborated on projects under the broader FNB Insurance Pillar.</li>
+                        <li>Deployed and managed code changes in production environments.</li>
+                        <li>Reviewed code and mentored junior developers.</li>
                     </ul>
                 </CardContent>
             </Card>
@@ -72,18 +71,14 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Systems Manager</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Mar 2018 - Jul 2018)</p>
                     <p className="mt-2">
-                        I was promoted from a Senior Developer to Systems Manager of the Pricing Deployment department where my focus shifted to people and project management,
-                        while being able to stay on top of developments in RPGLE. I was still required to do development for the short-term insurance pricing system,
-                        which kept me close to the technical side of the business.
+                        Promoted to Systems Manager for the Pricing deployment department,
+                        leading a team while remaining technically involved in the development of pricing modules.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Ensuring all projects and duties of my team are completed accurately and on time</li>
-                        <li>Prioritization of projects as well as business-as-usual tasks</li>
-                        <li>Conduct performance reviews</li>
-                        <li>Recruitment of new staff and conducting interviews</li>
-                        <li>Engage in salary negotiations</li>
-                        <li>Authorize my team&apos;s leave and other HR system claims</li>
-                        <li>Develop and maintain the RPGLE pricing and monthly renewal modules for the short-term insurance system</li>
+                        <li>Managed delivery of all pricing-related projects and tasks.</li>
+                        <li>Oversaw performance reviews, hiring, and salary negotiations.</li>
+                        <li>Prioritized and tracked project pipelines and resource allocation.</li>
+                        <li>Continued development of RPGLE modules for pricing and monthly renewals.</li>
                     </ul>
                 </CardContent>
             </Card>
@@ -94,19 +89,15 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Senior Developer</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Jan 2017 - Mar 2018)</p>
                     <p className="mt-2">
-                        During my time at Telesure, I successfully took on several new responsibilities and was promoted to Senior Developer.
-                        The main responsibility was to take sole ownership for the business and value-added products insurance pricing systems
-                        and to ensure that all the team&apos;s code changes were deployed correctly to the production environments.
+                        Took full ownership of business and value-added product pricing systems,
+                        leading technical efforts for critical insurance modules.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Support for the short-term, business, and value-added products insurance systems</li>
-                        <li>Developed and maintained the RPGLE pricing modules that determine the premiums for the value-added products and business insurance systems, as well as the monthly policy renewal runs</li>
-                        <li>Enhancement projects for the short-term insurance pricing system</li>
-                        <li>Running monthly policy renewals for value-added products and business insurance systems</li>
-                        <li>Compiling reports and running analysis on the effect of the monthly policy renewal runs</li>
-                        <li>Maintaining DB2 pricing tables for all systems</li>
-                        <li>Deployment of the team&apos;s code changes to production environments</li>
-                        <li>Provide guidance and sign-off on junior developers&apos; work</li>
+                        <li>Maintained pricing and renewal systems for short-term, business, and VAPS insurance lines.</li>
+                        <li>Developed RPGLE modules to calculate premiums and execute monthly renewal runs.</li>
+                        <li>Analyzed renewal performance and managed DB2 pricing table changes.</li>
+                        <li>Deployed all team code to production environments.</li>
+                        <li>Reviewed code and mentored junior developers.</li>
                     </ul>
                     <p className="mt-2 font-semibold">Key Achievements / Projects:</p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
@@ -122,14 +113,14 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Programmer</h3>
                     <p className="text-gray-500">Telesure Group Services, Dainfern (Aug 2014 - Jan 2017)</p>
                     <p className="mt-2">
-                        As I started my full-time career in programming at Telesure, I was given responsibility for all the processes of the value-added products channel of the business,
-                        as well as general pricing systems support.
+                        Responsible for development and support of the value-added products channel,
+                        including premium calculations and policy renewal cycles.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Support for the short-term, business, and value-added products insurance systems</li>
-                        <li>Developed and maintained the RPGLE pricing modules for the value-added products system and the monthly policy renewal runs</li>
-                        <li>Compiling reports and running analysis on the effect of the monthly policy renewal runs</li>
-                        <li>Maintaining DB2 pricing tables for the value-added products system</li>
+                        <li>Maintained RPGLE pricing modules and monthly policy renewal logic.</li>
+                        <li>Supported short-term, business, and value-added insurance systems.</li>
+                        <li>Produced reports analyzing renewal trends and pricing outcomes.</li>
+                        <li>Managed DB2 pricing tables and business rule configurations.</li>
                     </ul>
                 </CardContent>
             </Card>
@@ -140,10 +131,13 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Programmer</h3>
                     <p className="text-gray-500">AEC Electronics, Kempton Park (Jun 2014 - Aug 2014)</p>
                     <p className="mt-2">
-                        I was employed at AEC Electronics on a contract basis to design and develop a web interface for their Intelligent Blasting System used in the mining industry.
-                        The goal was to enable communication between the electronic blasting units and a web interface to visually present the system&apos;s status before, during, and after a blast cycle.
-                        The project was successful and delivered on time.
+                        Contracted to develop a real-time web interface for the Intelligent Blasting System used in the mining sector.
                     </p>
+                    <ul className="list-disc ml-4 mt-2 text-sm">
+                        <li>Designed and delivered a custom front-end application to communicate with embedded blasting systems.</li>
+                        <li>Provided real-time visual feedback for pre-blast diagnostics and post-blast analysis.</li>
+                        <li>Successfully delivered the solution within project timelines.</li>
+                    </ul>
                 </CardContent>
             </Card>
         </div>

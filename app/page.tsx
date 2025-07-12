@@ -10,14 +10,10 @@ import { MembershipSection } from '@/components/MembershipSection'
 import { ExperienceSection } from '@/components/ExperienceSection'
 import { DownloadCVButton } from '@/components/DownloadCV'
 import { SidebarNav } from '@/components/nav-bar'
+import { CoursesSection } from '@/components/CoursesSection'
 import Image from "next/image"
 
-//TODO: Add Courses section between Education and Membership
-//TODO: fix navbar window resize issue
-//TODO: Update ProfileSection full stack developer description
 //TODO: Update ExperienceSection with latest job details
-//TODO: revise wording on all sections
-//TODO: rewrite navbar to use shadcn/ui components
 
 export default function Home() {
   return (
@@ -69,6 +65,11 @@ export default function Home() {
           <section id="education">
             <AnimatedSection>
               <EducationSection />
+            </AnimatedSection>
+          </section>
+          <section id="courses">
+            <AnimatedSection>
+              <CoursesSection />
             </AnimatedSection>
           </section>
           <section id="membership">
