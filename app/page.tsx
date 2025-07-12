@@ -14,6 +14,7 @@ import { CoursesSection } from '@/components/CoursesSection'
 import Image from "next/image"
 
 //TODO: Update ExperienceSection with latest job details
+//TODO: Check hoverCard functionality on mobile
 
 export default function Home() {
   return (

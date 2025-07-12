@@ -7,17 +7,31 @@ import { motion } from "framer-motion"
 export function CoursesSection() {
     const courses = [
         {
-            name: "LeadershipEx Programme",
-            description: "An executive leadership program focused on strategic decision-making, innovation, and team empowerment.",
+            name: (
+                <>
+                    LeadershipEx <br /> Programme
+                </>
+            ),
+            description:
+                "An executive leadership program focused on strategic decision-making, innovation, and team empowerment.",
             issuedDate: "Feb 2025",
         },
         {
-            name: "Microsoft Certified: Azure Fundamentals",
-            description: "Certification covering Azure architecture, cloud concepts, core services, pricing, and governance.",
+            name: (
+                <>
+                    Microsoft Certified <br /> Azure Fundamentals
+                </>
+            ),
+            description:
+                "Certification covering Azure architecture, cloud concepts, core services, pricing, and governance.",
             issuedDate: "Aug 2024",
         },
         {
-            name: "LinkedIn Learning Courses",
+            name: (
+                <>
+                    LinkedIn Learning<br /> Courses and Certificates
+                </>
+            ),
             subCourses: [
                 "Learning SOLID Programming Principles (May 2023)",
                 "Angular Essential Training (Apr 2023)",
@@ -47,7 +61,7 @@ export function CoursesSection() {
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="cursor-pointer"
                             >
-                                <Badge className="badge-primary text-m py-1.5 px-3 text-center w-full justify-center">
+                                <Badge className="badge-primary text-base py-2 px-3 text-center w-full justify-center leading-tight whitespace-normal">
                                     {course.name}
                                 </Badge>
                             </motion.div>

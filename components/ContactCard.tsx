@@ -12,7 +12,7 @@ export function ContactCard() {
                     {/* ✅ Avatar Left */}
                     <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-700 flex-shrink-0">
                         <Image
-                            src="/profile_pic.png"
+                            src="/github_profile.png"
                             alt="Werner Mans Avatar"
                             width={1181}
                             height={1181}
