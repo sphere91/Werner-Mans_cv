@@ -9,32 +9,32 @@ export function SkillsSection() {
         {
             name: "RPG IV (ILE RPG)",
             description: "Modern programming language for IBM i systems, used for business applications and system integration.",
-            level: 95
+            level: 90
         },
         {
             name: "CL (Control Language)",
             description: "Scripting language for IBM i systems, used for automation, batch processing, and system control.",
-            level: 85
+            level: 75
         },
         {
             name: "Node.js",
             description: "JavaScript runtime for building scalable, fast back-end and full-stack applications.",
-            level: 75
+            level: 80
         },
         {
             name: "SQL",
             description: "Language for managing and querying relational databases.",
-            level: 65
+            level: 90
         },
         {
             name: "Python",
             description: "Versatile programming language for automation, data analysis, and web development.",
-            level: 95
+            level: 65
         },
         {
             name: "C++",
             description: "High-performance, low-level programming language for systems and performance-critical apps.",
-            level: 75
+            level: 70
         },
         {
             name: "Next.js",
@@ -44,7 +44,7 @@ export function SkillsSection() {
         {
             name: "Angular",
             description: "TypeScript-based framework for building dynamic, single-page web applications.",
-            level: 70
+            level: 65
         }
     ]
 
