@@ -17,6 +17,7 @@ import Image from "next/image"
 //TODO: Update ProfileSection full stack developer description
 //TODO: Update ExperienceSection with latest job details
 //TODO: revise wording on all sections
+//TODO: rewrite navbar to use shadcn/ui components
 
 export default function Home() {
   return (
