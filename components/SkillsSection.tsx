@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from "react"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
@@ -48,17 +49,42 @@ export function SkillsSection() {
         },
     ]
 
+    const [openCard, setOpenCard] = useState<number | null>(null)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1150)
+            if (window.innerWidth >= 1150) setOpenCard(null) // Close all cards on desktop
+        }
+        handleResize() // Initial check
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    const toggleCard = (index: number) => {
+        setOpenCard(openCard === index ? null : index)
+    }
+
     return (
         <div className="mt-6">
             <h2 className="text-xl font-semibold mb-2">Skills</h2>
             <div className="flex flex-wrap gap-4">
-                {skills.map((skill) => (
-                    <HoverCard key={skill.name} openDelay={100} closeDelay={50}>
+                {skills.map((skill, index) => (
+                    <HoverCard
+                        key={skill.name}
+                        openDelay={100}
+                        closeDelay={50}
+                        open={isMobile ? openCard === index : undefined}
+                    >
                         <HoverCardTrigger asChild>
                             <motion.div
-                                whileHover={{ scale: 1.15 }}
+                                whileHover={{ scale: !isMobile ? 1.15 : 1 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="cursor-pointer"
+                                onClick={() => isMobile && toggleCard(index)}
+                                role="button"
+                                aria-label={`Toggle details for ${skill.name}`}
                             >
                                 <Badge className="badge-primary text-base py-1.5 px-3">
                                     {skill.name}
@@ -77,9 +103,6 @@ export function SkillsSection() {
                                     className="h-full bg-primary rounded-full"
                                 />
                             </div>
-                            {/* <div className="text-xs text-right text-white/80">
-                                {skill.level}%
-                            </div> */}
                         </HoverCardContent>
                     </HoverCard>
                 ))}

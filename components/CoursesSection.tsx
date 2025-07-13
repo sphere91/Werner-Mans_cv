@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from "react"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
@@ -7,6 +8,7 @@ import { motion } from "framer-motion"
 export function CoursesSection() {
     const courses = [
         {
+            key: "leadership-ex",
             name: (
                 <>
                     LeadershipEx <br /> Programme
@@ -17,6 +19,7 @@ export function CoursesSection() {
             issuedDate: "Feb 2025",
         },
         {
+            key: "azure-fundamentals",
             name: (
                 <>
                     Microsoft Certified <br /> Azure Fundamentals
@@ -27,6 +30,7 @@ export function CoursesSection() {
             issuedDate: "Aug 2024",
         },
         {
+            key: "linkedin-learning",
             name: (
                 <>
                     LinkedIn Learning<br /> Courses and Certificates
@@ -47,19 +51,46 @@ export function CoursesSection() {
         },
     ]
 
+    // State to track open state for each card on mobile
+    const [openCard, setOpenCard] = useState<string | null>(null)
+    const [isMobile, setIsMobile] = useState(false)
+
+    // Detect mobile breakpoint (1150px)
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1150)
+            if (window.innerWidth >= 1150) setOpenCard(null) // Close all cards on desktop
+        }
+        handleResize() // Initial check
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    const toggleCard = (key: string) => {
+        setOpenCard(openCard === key ? null : key)
+    }
+
     return (
         <div className="mt-6">
             <h2 className="text-xl font-semibold mb-2">Courses</h2>
 
-            {/* ✅ Use a 3-column grid for consistent spacing */}
+            {/* Use a 3-column grid for consistent spacing */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {courses.map((course) => (
-                    <HoverCard key={course.name} openDelay={100} closeDelay={50}>
+                    <HoverCard
+                        key={course.key}
+                        openDelay={100}
+                        closeDelay={50}
+                        open={isMobile ? openCard === course.key : undefined}
+                    >
                         <HoverCardTrigger asChild>
                             <motion.div
-                                whileHover={{ scale: 1.15 }}
+                                whileHover={{ scale: !isMobile ? 1.15 : 1 }} // Disable scale on mobile
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="cursor-pointer"
+                                onClick={() => isMobile && toggleCard(course.key)}
+                                role="button"
+                                aria-label={`Toggle details for ${course.key.replace(/-/g, ' ')}`}
                             >
                                 <Badge className="badge-primary text-base py-2 px-3 text-center w-full justify-center leading-tight whitespace-normal">
                                     {course.name}
@@ -68,7 +99,6 @@ export function CoursesSection() {
                         </HoverCardTrigger>
 
                         <HoverCardContent className="w-72 space-y-2">
-                            {/* ✅ If it's the LinkedIn card, show a bullet list */}
                             {course.subCourses ? (
                                 <>
                                     <p className="text-sm text-white/90 font-medium">Included Courses:</p>
