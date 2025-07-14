@@ -10,28 +10,31 @@ import { ExperienceSection } from '@/components/ExperienceSection'
 import { DownloadCVButton } from '@/components/DownloadCV'
 import { SidebarNav } from '@/components/nav-bar'
 import { CoursesSection } from '@/components/CoursesSection'
-import Image from "next/image"
 
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Decorative Background Images */}
-      <Image
-        src="/Digital Overlay-Left Top.png" // Replace with your left image path
-        alt="Left decorative frame"
-        className="fixed top-0 left-0 z-[-1] w-110 h-100 md:h-4/5 object-cover opacity-20 hidden md:block"
-        priority
-        width={4222}
-        height={12500}
-      />
-      <Image
-        src="/Digital Overlay-Right Bottom.png" // Replace with your right image path
-        alt="Right decorative frame"
-        className="fixed bottom-0 right-0 z-[-1] w-110 h-100 md:h-4/5 object-cover opacity-20 hidden md:block"
-        width={4222}
-        height={12500}
-        priority
-      />
+      {/* Decorative Background Videos */}
+      <video
+        className="fixed top-0 left-0 z-[-1] w-[23vw] h-[95vh] object-cover opacity-60 hidden md:block"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/bg_left.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <video
+        className="fixed bottom-0 right-0 z-[-1] w-[23vw] h-[95vh] object-cover opacity-60 hidden md:block"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/bg_right.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
       {/* Static Gradient Fade */}
       <div
         className="fixed inset-0 z-0 bg-gradient-to-br from-gray-800 via-blue-900 via-blue-800 via-blue-700 via-blue-600 to-blue-400 opacity-30"
