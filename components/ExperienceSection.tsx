@@ -11,17 +11,27 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-bold">Development Technical Lead</h3>
                     <p className="text-gray-500">Telesure Investment Holdings, Dainfern (Jun 2023 - Present)</p>
                     <p className="mt-2">
-                        With the goal of expanding my skills through the exploration of new technologies and languages,
-                        I joined the 1Life project&apos;s team. Though the main focus is still on back-end RPG development,
-                        the objective is to shift to a balanced role as a full stack developer.
+                        Lead two development teams to deliver scalable solutions,
+                        architect and oversee Azure Cloud infrastructure,
+                        and establish development standards to enhance efficiency and code quality.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Support across all products and back-end areas under the 1Life Insurance Pillar</li>
-                        <li>Enhancement and Business as usual projects for the long-term insurance system</li>
-                        <li>Resolution of any Business impacting incidents</li>
-                        <li>General system improvements and enhancements</li>
-                        <li>Deployment of code changes to production systems</li>
-                        <li>Provide guidance to junior developers</li>
+                        <li>Guide developers on best practices and resolve technical issues across projects.</li>
+                        <li>Architect and implement Azure Cloud solutions, including CI/CD pipelines.</li>
+                        <li>Establish and govern development standards, including code reviews and documentation.</li>
+                        <li>Manage Azure Cloud estate, optimizing pricing and architecture for performance.</li>
+                        <li>Assess candidates&apos; technical and logical skills during the hiring process.</li>
+                        <li>Vet business requirements, perform technical impact assessments, and estimate timelines using PERT.</li>
+                    </ul>
+                    <p className="mt-2 font-semibold">Key Achievements / Projects:</p>
+                    <ul className="list-disc ml-4 mt-2 text-sm">
+                        <li>Optimized Azure infrastructure by scaling apps and reserving resources, saving $~3700 (~R70 000 ZAR) monthly.</li>
+                        <li>Developed a logical app to monitor and manage Azure app creation across the estate.</li>
+                        <li>Implemented a JSON-based Business Rules Engine, enabling scalable rule management.</li>
+                        <li>Introduced Strapi CMS, a free, scalable, and user-friendly content management solution.</li>
+                        <li>Integrated SonarQube into CI/CD pipelines with documentation, enhancing code quality.</li>
+                        <li>Implemented automated system health checks to proactively resolve issues before stakeholder impact.</li>
+                        <li>Automated release note generation via Azure Pipelines, streamlining documentation.</li>
                     </ul>
                 </CardContent>
             </Card>

@@ -15,7 +15,7 @@ export function CoursesSection() {
                 </>
             ),
             description:
-                "An executive leadership program focused on strategic decision-making, innovation, and team empowerment.",
+                "An executive leadership program focused on Emotional Intelligence, Agile Workforce, Wellbeing, Time Management and team empowerment.",
             issuedDate: "Feb 2025",
         },
         {

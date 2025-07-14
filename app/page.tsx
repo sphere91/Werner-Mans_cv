@@ -12,12 +12,6 @@ import { SidebarNav } from '@/components/nav-bar'
 import { CoursesSection } from '@/components/CoursesSection'
 import Image from "next/image"
 
-//TODO: Update ExperienceSection with latest job details
-//TODO: Gather Tech lead information for the CV
-//TODO: get Info on LeadershipEx Programme
-//TODO: Move navbar on desktop to middle again
-
-
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -40,7 +34,7 @@ export default function Home() {
       />
       {/* Static Gradient Fade */}
       <div
-        className="fixed inset-0 z-0 bg-gradient-to-br from-gray-900 via-blue-600 to-blue-400 opacity-30 blur-3xl"
+        className="fixed inset-0 z-0 bg-gradient-to-br from-gray-800 via-blue-900 via-blue-800 via-blue-700 via-blue-600 to-blue-400 opacity-30"
       />
       {/* CV Content with Sidebar Layout */}
       <div className="relative z-10 flex">
@@ -90,6 +84,6 @@ export default function Home() {
           </section>
         </main>
       </div>
-    </div>
+    </div >
   )
 }

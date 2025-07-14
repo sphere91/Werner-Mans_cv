@@ -64,8 +64,8 @@ export function SidebarNav() {
 
             {/* Sidebar Navigation */}
             <nav
-                className={`fixed top-1/2 left-0 z-50 h-full bg-gray-900/90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                    } md:translate-x-0 md:top-1/2 md:-translate-y-1/2 md:bg-transparent md:backdrop-blur-none flex flex-col space-y-2 p-4 w-64 md:w-auto`}
+                className={`fixed top-0 left-0 z-50 h-full bg-gray-900/90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
+                    } md:translate-x-0 md:top-1/2 md:-translate-y-1/2 md:bg-transparent md:backdrop-blur-none md:h-auto flex flex-col space-y-2 p-4 w-64 md:w-auto`}
             >
                 {sections.map((section) => (
                     <Button
