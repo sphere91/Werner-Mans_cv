@@ -111,8 +111,8 @@ export function ExperienceSection() {
                     </ul>
                     <p className="mt-2 font-semibold">Key Achievements / Projects:</p>
                     <ul className="list-disc ml-4 mt-2 text-sm">
-                        <li>Developed a new pricing module for the business insurance system, designed for higher accuracy and more detailed rating</li>
-                        <li>Optimized RPGLE pricing modules by replacing SQL formula calculations with C++ functions, improving processing times by up to 30%</li>
+                        <li>Developed a new pricing module for the business insurance system, designed for higher accuracy and more detailed rating.</li>
+                        <li>Optimized RPGLE pricing modules by replacing SQL formula calculations with C++ functions, improving processing times by up to 30%.</li>
                     </ul>
                 </CardContent>
             </Card>
