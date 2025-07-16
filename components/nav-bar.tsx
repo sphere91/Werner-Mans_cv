@@ -45,7 +45,7 @@ export function SidebarNav() {
             {/* Hamburger Menu Button (Visible on Mobile) */}
             <Button
                 variant="ghost"
-                className="fixed top-4 left-4 z-50 md:hidden"
+                className="fixed top-4 left-4 z-50 xl:hidden"
                 onClick={toggleMenu}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
             >
@@ -65,7 +65,7 @@ export function SidebarNav() {
             {/* Sidebar Navigation */}
             <nav
                 className={`fixed top-0 left-0 z-50 h-full bg-gray-900/90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                    } md:translate-x-0 md:top-1/2 md:-translate-y-1/2 md:bg-transparent md:backdrop-blur-none md:h-auto flex flex-col space-y-2 p-4 w-64 md:w-auto`}
+                    } xl:translate-x-0 xl:top-1/2 xl:-translate-y-1/2 xl:bg-transparent xl:backdrop-blur-none xl:h-auto flex flex-col space-y-2 p-4 w-64 xl:w-auto`}
             >
                 {sections.map((section) => (
                     <Button
