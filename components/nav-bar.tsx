@@ -41,13 +41,9 @@ export function SidebarNav() {
         setIsOpen(!isOpen)
     }
 
-    const closeMenu = () => {
-        if (isOpen) setIsOpen(false) // Explicitly close the menu
-    }
-
     return (
         <>
-            {/* Hamburger Menu Button (Visible on mobile, toggles between Menu and X) */}
+            {/* Hamburger Menu Button (Visible on Mobile, hidden on xl and up) */}
             <Button
                 variant="ghost"
                 className="fixed top-4 left-4 z-50 xl:hidden"
@@ -60,7 +56,7 @@ export function SidebarNav() {
             {/* Sidebar Navigation */}
             <nav
                 className={`fixed top-0 left-0 z-50 h-full bg-gray-900/90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                    } xl:static xl:translate-x-0 xl:top-1/2 xl:-translate-y-1/2 xl:bg-transparent xl:backdrop-blur-none xl:h-auto flex flex-col space-y-2 p-4 w-64 xl:w-auto`}
+                    } xl:translate-x-0 xl:top-1/2 xl:-translate-y-1/2 xl:bg-transparent xl:backdrop-blur-none xl:h-auto flex flex-col space-y-2 p-4 w-64 xl:w-auto`}
             >
                 {sections.map((section) => (
                     <Button
@@ -68,7 +64,7 @@ export function SidebarNav() {
                         variant={activeSection === section.id ? "default" : "ghost"}
                         onClick={() => {
                             document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })
-                            closeMenu() // Use the closeMenu function to ensure the menu closes
+                            setIsOpen(false) // Close menu on mobile after clicking
                         }}
                         className={`rounded-full px-4 py-2 text-sm text-left ${activeSection === section.id ? 'bg-primary text-white' : 'text-white/80'
                             }`}
