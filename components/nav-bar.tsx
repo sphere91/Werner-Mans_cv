@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import { Menu, X } from "lucide-react" // Import Lucide icons
 
 const sections = [
     { id: "profile", label: "Profile" },
@@ -40,32 +41,26 @@ export function SidebarNav() {
         setIsOpen(!isOpen)
     }
 
+    const closeMenu = () => {
+        if (isOpen) setIsOpen(false) // Explicitly close the menu
+    }
+
     return (
         <>
-            {/* Hamburger Menu Button (Visible on Mobile) */}
+            {/* Hamburger Menu Button (Visible on mobile, toggles between Menu and X) */}
             <Button
                 variant="ghost"
                 className="fixed top-4 left-4 z-50 xl:hidden"
                 onClick={toggleMenu}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-                <div className="w-6 h-6 relative">
-                    <span
-                        className={`absolute top-0 left-0 w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}
-                    ></span>
-                    <span
-                        className={`absolute top-2 left-0 w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`}
-                    ></span>
-                    <span
-                        className={`absolute top-4 left-0 w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}
-                    ></span>
-                </div>
+                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
 
             {/* Sidebar Navigation */}
             <nav
                 className={`fixed top-0 left-0 z-50 h-full bg-gray-900/90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                    } xl:translate-x-0 xl:top-1/2 xl:-translate-y-1/2 xl:bg-transparent xl:backdrop-blur-none xl:h-auto flex flex-col space-y-2 p-4 w-64 xl:w-auto`}
+                    } xl:static xl:translate-x-0 xl:top-1/2 xl:-translate-y-1/2 xl:bg-transparent xl:backdrop-blur-none xl:h-auto flex flex-col space-y-2 p-4 w-64 xl:w-auto`}
             >
                 {sections.map((section) => (
                     <Button
@@ -73,7 +68,7 @@ export function SidebarNav() {
                         variant={activeSection === section.id ? "default" : "ghost"}
                         onClick={() => {
                             document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })
-                            setIsOpen(false) // Close menu on mobile after clicking
+                            closeMenu() // Use the closeMenu function to ensure the menu closes
                         }}
                         className={`rounded-full px-4 py-2 text-sm text-left ${activeSection === section.id ? 'bg-primary text-white' : 'text-white/80'
                             }`}
