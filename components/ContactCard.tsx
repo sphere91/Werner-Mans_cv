@@ -37,7 +37,9 @@ export function ContactCard() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-5 h-5 text-white" />
-                                <span>(+27) 72 207 6804</span>
+                                <a href="tel:+27722076804" className="hover:underline">
+                                    (+27) 72 207 6804
+                                </a>
                             </div>
                             <div className="flex items-center gap-2">
                                 <MapPin className="w-5 h-5 text-white" />
